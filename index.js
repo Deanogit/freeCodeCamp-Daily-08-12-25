@@ -6,3 +6,16 @@
 // 1 pound equals 0.453592 kilograms.
 // If the input is 1, use "pound" instead of "pounds".
 // If the converted value is 1, use "kilogram" instead of "kilograms".
+
+function convertToKgs(lbs) {
+  console.log(lbs);
+  const kgs = lbs * 0.453592;
+  const kgsDec = kgs.toFixed(2);
+  console.log(kgsDec);
+  let string = `${lbs} ${lbs <= 1 ? 'pound' : 'pounds'} equals ${kgsDec} ${
+    kgsDec === 1 ? 'kilogram' : 'kilograms'
+  }.`;
+  console.log(string);
+  return string;
+  // return lbs;
+}
