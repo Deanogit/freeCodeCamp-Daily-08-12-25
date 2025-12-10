@@ -12,10 +12,13 @@ function convertToKgs(lbs) {
   const kgs = lbs * 0.453592;
   const kgsDec = kgs.toFixed(2);
   console.log(kgsDec);
-  let string = `${lbs} ${lbs <= 1 ? 'pound' : 'pounds'} equals ${kgsDec} ${
-    kgsDec === 1 ? 'kilogram' : 'kilograms'
+  let string = `${lbs} ${lbs === 1 ? 'pound' : 'pounds'} equals ${kgsDec} ${
+    kgsDec == 1 ? 'kilogram' : 'kilograms'
   }.`;
   console.log(string);
   return string;
   // return lbs;
 }
+
+convertToKgs(0);
+convertToKgs(2.20462);
